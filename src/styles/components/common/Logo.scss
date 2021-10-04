@@ -1,0 +1,12 @@
+.app {
+  .logo {
+    display: flex;
+    align-items: center;
+
+    &.mobile {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

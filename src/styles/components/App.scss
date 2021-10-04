@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.app {
+  font-family: "Chivo", serif;
+  overflow-x: hidden;
+
+  button {
+    font-family: "Chivo", serif;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+}
+
+@import "./common/AccentIcon.scss";
+@import "./common/Logo.scss";
+@import "./common/Footer.scss";
+@import "./Navigation.scss";

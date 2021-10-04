@@ -1,0 +1,28 @@
+.app {
+  section.whatis-section {
+    .whatis-section-content {
+      padding-right: 100px;
+    }
+
+    .whatis-section-image {
+      background-image: url("../../../../images/pages/Homepage/whatis-pic.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 220px;
+      width: 100%;
+      max-width: 360px;
+      border-radius: 10px;
+    }
+
+    .mobile-section {
+      h3 {
+        font-size: 2.7rem;
+        text-align: center;
+      }
+
+      .whatis-section-image {
+        margin-top: 20px;
+      }
+    }
+  }
+}

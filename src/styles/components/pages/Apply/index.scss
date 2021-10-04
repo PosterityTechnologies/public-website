@@ -1,0 +1,129 @@
+@import "../../../variables.scss";
+
+.app {
+  .apply-page {
+    .topNav {
+      position: relative;
+    }
+
+    .mobile-nav {
+      button.menu-icon {
+        color: $mediumBlue;
+      }
+    }
+
+    .footer-container {
+      .footer-section {
+        padding-top: 60px;
+      }
+
+      .copyright {
+        padding-bottom: 40px;
+      }
+    }
+
+    .content-container {
+      background-color: $lightBlue;
+
+      .accent-left {
+        .icon1 {
+          top: 80px;
+          left: 100px;
+          transform: scale((1.4));
+        }
+        .icon2 {
+          top: 1200px;
+          left: 120px;
+          transform: scale(1.7) rotate(90deg);
+        }
+      }
+
+      .accent-right {
+        .icon1 {
+          top: 420px;
+          left: 120px;
+          transform: scale(2.5) rotate(0deg);
+        }
+        .icon2 {
+          top: 1600px;
+          left: 120px;
+          transform: scale(1.5);
+        }
+      }
+
+      .main-section {
+        padding: 80px 0;
+
+        .form {
+          background: $blueGradient;
+          border-radius: 10px;
+          padding: 50px;
+          width: 60%;
+
+          h1 {
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 30px;
+          }
+
+          label {
+            color: #8a9dc6;
+          }
+
+          button {
+            background-color: $white;
+            color: $darkBlue;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 15px 75px;
+          }
+
+          .form-control {
+            width: 100%;
+            padding: 15px 0;
+
+            &.btnSubmit {
+              width: auto;
+              padding-top: 30px;
+            }
+
+            input,
+            .MuiSelect-select {
+              color: $white;
+              font-weight: bold;
+              font-size: 1.2em;
+            }
+
+            textarea {
+              color: $white;
+              font-weight: bold;
+            }
+
+            svg {
+              color: rgba(138, 157, 198, 0.4);
+            }
+
+            label + .MuiInput-formControl {
+              margin-top: 30px;
+            }
+
+            .MuiSelect-select {
+              option {
+                color: $white;
+                background-color: $mediumBlue;
+                border: 0;
+              }
+            }
+
+            .MuiInput-underline::before,
+            .MuiInput-underline::after {
+              border-bottom: 1px solid rgba(138, 157, 198, 0.4);
+            }
+          }
+        }
+      }
+    }
+  }
+}

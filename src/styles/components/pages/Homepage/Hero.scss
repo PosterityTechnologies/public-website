@@ -1,0 +1,118 @@
+.app {
+  section.hero-section {
+    padding: 0;
+
+    .hero-image {
+      background-color: $darkBlue;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../../../images/pages/Homepage/hero-image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      position: relative;
+      align-items: center;
+      box-shadow: 0 0 40px -20px;
+      width: 100%;
+      min-height: 65vh;
+      // margin-bottom: 160px;
+    }
+
+    .hero-body {
+      position: relative;
+      margin-top: 140px;
+      margin-bottom: 100px;
+
+      .hero-text {
+        display: flex;
+        align-items: center;
+        cursor: default;
+
+        p {
+          padding: 60px 0;
+          margin: 0;
+          font-size: 4.5em;
+          color: $white;
+
+          div {
+            padding: 10px 0;
+
+            &.highlight {
+              font-weight: bold;
+            }
+          }
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .btnApply {
+        // margin: 60px 0;
+        margin-top: 40px;
+
+        a {
+          border-radius: 40px;
+          padding: 15px 45px;
+          background: $blueGradient;
+          font-weight: bold;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+
+      .hero-call-us {
+        position: relative;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 45px;
+        padding: 35px;
+        border-radius: 10px;
+        cursor: default;
+
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+        }
+
+        .hero-phone-icon {
+          float: left;
+          display: flex;
+          background: $blueGradient;
+          border-radius: 50%;
+          padding: 10px;
+          margin-right: 15px;
+
+          svg {
+            color: $white;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
+    &.mobile {
+      .hero-image {
+        min-height: 0;
+        height: 600px;
+        background-size: 100% 600px;
+        margin-bottom: 50px;
+      }
+
+      .hero-body {
+        margin-top: 90px;
+      }
+    }
+
+    &.mobile600 {
+      .hero-body {
+        margin-top: 0;
+      }
+    }
+  }
+}

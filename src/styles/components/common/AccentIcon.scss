@@ -1,0 +1,108 @@
+.app {
+  .accent-icon-container {
+    position: relative;
+
+    .accent-icon {
+      background-image: url("../../../images/common/accent-icons.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      opacity: 0.2;
+
+      &.dots {
+        height: 160px;
+        width: 100px;
+        background-position: 0 0;
+      }
+
+      &.circles {
+        height: 120px;
+        width: 100px;
+        background-position: 0 -388px;
+      }
+
+      &.line {
+        height: 224px;
+        width: 262px;
+        background-position: 0 -165px;
+      }
+
+      &.square {
+        height: 81px;
+        width: 77px;
+        background-position: 0 -510px;
+      }
+    }
+
+    &.values-section {
+      .dots {
+        top: 80px;
+        right: 60px;
+      }
+
+      .circles {
+        top: 140px;
+        left: 40px;
+        transform: rotate(45deg) scale(0.8);
+      }
+    }
+
+    &.whatis-section {
+      .line {
+        top: 210px;
+        right: -150px;
+      }
+    }
+
+    &.how-it-works-section {
+      .dots {
+        top: -78px;
+        left: 78px;
+      }
+
+      .circles {
+        top: 210px;
+        right: 120px;
+        height: 28px;
+        width: 33px;
+      }
+    }
+
+    &.quotes-section {
+      .line {
+        top: 110px;
+        left: -130px;
+        transform: scaleX(-1) rotate(20deg);
+      }
+    }
+
+    &.industries-section {
+      .dots {
+        top: -78px;
+        right: 78px;
+      }
+
+      .circles {
+        top: 422px;
+        right: -50px;
+      }
+    }
+
+    &.footer-section {
+      .dots {
+        top: -78px;
+        left: 78px;
+      }
+
+      .square {
+        top: 467px;
+        left: -35px;
+      }
+
+      .circles {
+        top: 248px;
+        right: 53px;
+        transform: rotate(175deg);
+      }
+    }
+  }
+}

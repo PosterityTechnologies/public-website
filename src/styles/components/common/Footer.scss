@@ -1,0 +1,229 @@
+.app {
+  section.footer-section {
+    .copyright {
+      color: $grey;
+      font-size: 0.7em;
+    }
+
+    .divider {
+      border-bottom: 1px solid #c7cfdf;
+      margin: 40px 0;
+    }
+
+    .styled-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #c7cfdf;
+      border-radius: 50%;
+      margin: 0 10px;
+
+      svg {
+        color: #c7cfdf;
+      }
+    }
+
+    .content {
+      h6 {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .summary {
+        p {
+          margin: 30px 0;
+        }
+      }
+
+      .follow-us {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        > div {
+          display: flex;
+        }
+
+        h6 {
+          margin-right: 10px;
+          color: #3d3d3d;
+        }
+
+        .styled-icon:hover {
+          border: 2px solid #a3aab8;
+          cursor: pointer;
+
+          svg {
+            color: #a3aab8;
+          }
+        }
+      }
+
+      .contact-us {
+        cursor: default;
+
+        > div > div,
+        > div > div a {
+          display: flex;
+          align-items: center;
+          color: $grey;
+
+          &:hover,
+          &:active {
+            .styled-icon {
+              border: 2px solid #a3aab8;
+
+              svg {
+                color: #a3aab8;
+              }
+            }
+          }
+        }
+
+        h6 {
+          margin-bottom: 10px;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .styled-icon {
+          margin: 10px 20px 10px 0;
+        }
+      }
+    }
+
+    .form {
+      position: relative;
+      background: $blueGradient;
+      border-radius: 10px;
+      padding: 50px;
+      margin-top: -300px;
+      z-index: 1;
+
+      h3 {
+        color: $white;
+      }
+
+      label {
+        color: #8a9dc6;
+      }
+
+      button {
+        background-color: $white;
+        color: $darkBlue;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 15px 75px;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 15px 0;
+
+        &.btnSubmit {
+          width: auto;
+          padding-top: 30px;
+        }
+
+        input,
+        .MuiSelect-select {
+          color: $white;
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+
+        textarea {
+          color: $white;
+          font-weight: bold;
+        }
+
+        svg {
+          color: rgba(138, 157, 198, 0.4);
+        }
+
+        .MuiSelect-select {
+          option {
+            color: $white;
+            background-color: $mediumBlue;
+            border: 0;
+          }
+        }
+
+        .MuiInput-underline::before,
+        .MuiInput-underline::after {
+          border-bottom: 1px solid rgba(138, 157, 198, 0.4);
+        }
+      }
+    }
+
+    .sitemap {
+      font-size: 0.9rem;
+      padding-bottom: 40px;
+
+      h6 {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #3d3d3d;
+        padding-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 10px 0;
+          color: $grey;
+
+          a,
+          a:visited,
+          a:hover {
+            color: $grey;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .hours {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .hours-list {
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    &.mobile-section {
+      padding: 30px 0;
+
+      form {
+        margin-top: 0;
+      }
+
+      .content {
+        padding-top: 30px;
+      }
+
+      .sitemap {
+        h6 {
+          padding-bottom: 0;
+        }
+
+        ul {
+          padding: 0 0 20px 0;
+        }
+      }
+    }
+  }
+}

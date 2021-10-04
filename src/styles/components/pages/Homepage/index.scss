@@ -1,0 +1,31 @@
+@import "../../../variables.scss";
+
+@import "./Hero.scss";
+@import "./Values.scss";
+@import "./WhatIs.scss";
+@import "./QuickInfo.scss";
+@import "./HowItWorks.scss";
+@import "./ClientQuotes.scss";
+@import "./IndustriesServed.scss";
+
+.app {
+  .homepage {
+    h3 {
+      font-weight: bold;
+      color: $darkBlue;
+      margin-bottom: 20px;
+    }
+
+    .section-bg {
+      background-color: $lightBlue;
+    }
+
+    .margin-bottom-270 {
+      margin-bottom: 270px;
+    }
+
+    .footer-container {
+      box-shadow: 0 0 30px -20px;
+    }
+  }
+}

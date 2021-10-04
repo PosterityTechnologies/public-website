@@ -1,0 +1,277 @@
+.app {
+  section.values-section {
+    display: flex;
+    padding: 0;
+
+    .values-container {
+      display: flex;
+      margin-top: 120px;
+
+      .left {
+        width: 50%;
+
+        .values-images {
+          position: relative;
+
+          .pic {
+            top: 0;
+            left: 0;
+
+            .image {
+              background-color: $darkBlue;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 10px;
+              width: 70%;
+              box-shadow: 5px 5px 20px -10px $black;
+              position: absolute;
+            }
+
+            .image-shadow {
+              background-color: transparent;
+              box-shadow: 5rem -3rem $lightBlue, 5rem 5rem $lightBlue;
+              padding-bottom: 50%;
+              width: 70%;
+              border-radius: 10px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+            }
+
+            &.item1 {
+              opacity: 0;
+
+              .image {
+                background-image: url("../../../../images/pages/Homepage/values-pic-1.jpg");
+                padding-bottom: 50%;
+              }
+
+              .line {
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                top: 165px;
+                left: 268px;
+                transform: rotate(47deg);
+              }
+            }
+
+            &.item2 {
+              opacity: 0;
+
+              .image {
+                background-image: url("../../../../images/pages/Homepage/values-pic-2.jpg");
+                padding-bottom: 75%;
+              }
+
+              .line {
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                top: 253px;
+                left: 265px;
+                transform: rotate(45deg);
+              }
+            }
+
+            &.item3 {
+              opacity: 0;
+
+              .image {
+                background-image: url("../../../../images/pages/Homepage/values-pic-3.jpg");
+                padding-bottom: 100%;
+              }
+
+              .line {
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                top: 400px;
+                left: 265px;
+                transform: rotate(65deg) scale(1, -1);
+              }
+            }
+
+            @keyframes fadeImage {
+              0% {
+                opacity: 0;
+              }
+              30% {
+                opacity: 1;
+              }
+              75% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+
+            &.selected {
+              animation: fadeImage 4s;
+            }
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+
+        ol {
+          list-style-type: none;
+          margin: 60px 0 0 0;
+          padding: 0;
+
+          li {
+            display: flex;
+
+            h4 {
+              margin: 0;
+              font-size: initial;
+              font-weight: 500;
+            }
+
+            p {
+              margin: 10px 0 60px 0;
+            }
+
+            .dotted-line {
+              position: relative;
+              display: flex;
+              justify-content: center;
+
+              &::after {
+                content: "";
+                border-left: 2px dashed #b9b9b9;
+                position: absolute;
+                display: block;
+                margin: 0 auto;
+                transform-origin: top;
+                height: calc(100% - 2.6rem);
+                top: 2.3rem;
+              }
+            }
+
+            .circle {
+              display: flex;
+              justify-content: center;
+              color: $darkBlue;
+              border: 1px solid $darkBlue;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              margin-top: -5px;
+
+              @keyframes fadeCircle {
+                0% {
+                  background-color: transparent;
+                  color: $darkBlue;
+                }
+                30% {
+                  background-color: $darkBlue;
+                  color: $white;
+                }
+                75% {
+                  background-color: $darkBlue;
+                  color: $white;
+                }
+                100% {
+                  background-color: transparent;
+                  color: $darkBlue;
+                }
+              }
+
+              &.selected {
+                animation: fadeCircle 4s;
+              }
+            }
+
+            .item-content {
+              margin-left: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    .mobile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 50px;
+
+      .card-container {
+        max-width: 400px;
+
+        .card {
+          position: relative;
+          display: none;
+          opacity: 0;
+
+          @keyframes fade {
+            0% {
+              opacity: 0;
+            }
+            30% {
+              opacity: 1;
+            }
+            70% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+
+          &.selected {
+            display: block;
+            animation: fade 6s forwards;
+          }
+        }
+      }
+
+      .pic {
+        height: 180px;
+
+        .image {
+          background-color: $darkBlue;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 100%;
+        }
+
+        &.pic1 {
+          .image {
+            background-image: url("../../../../images/pages/Homepage/values-pic-1.jpg");
+          }
+        }
+
+        &.pic2 {
+          .image {
+            background-image: url("../../../../images/pages/Homepage/values-pic-2.jpg");
+          }
+        }
+
+        &.pic3 {
+          .image {
+            background-image: url("../../../../images/pages/Homepage/values-pic-3.jpg");
+          }
+        }
+      }
+
+      .item-content {
+        padding: 16px;
+        text-align: center;
+
+        h4 {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
