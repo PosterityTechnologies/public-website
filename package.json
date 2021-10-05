@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "ISC",
-  "homepage": "https://posteritytechnologies.github.io/public-website",
+  "homepage": "https://posteritytechnologies.com/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
