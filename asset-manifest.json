@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/public-website/static/css/main.14170b80.chunk.css",
+    "main.js": "/public-website/static/js/main.da3e0a7b.chunk.js",
+    "main.js.map": "/public-website/static/js/main.da3e0a7b.chunk.js.map",
+    "runtime-main.js": "/public-website/static/js/runtime-main.e8d9d1a1.js",
+    "runtime-main.js.map": "/public-website/static/js/runtime-main.e8d9d1a1.js.map",
+    "static/js/2.8cedec97.chunk.js": "/public-website/static/js/2.8cedec97.chunk.js",
+    "static/js/2.8cedec97.chunk.js.map": "/public-website/static/js/2.8cedec97.chunk.js.map",
+    "index.html": "/public-website/index.html",
+    "precache-manifest.eed6913d2a8eb2c13e25b5b172b6dcc1.js": "/public-website/precache-manifest.eed6913d2a8eb2c13e25b5b172b6dcc1.js",
+    "service-worker.js": "/public-website/service-worker.js",
+    "static/css/main.14170b80.chunk.css.map": "/public-website/static/css/main.14170b80.chunk.css.map",
+    "static/js/2.8cedec97.chunk.js.LICENSE.txt": "/public-website/static/js/2.8cedec97.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/public-website/static/media/whatis-pic.736a920a.jpg",
+    "static/media/hero-text.png": "/public-website/static/media/hero-text.66882a74.png",
+    "static/media/industries-served-mobile.png": "/public-website/static/media/industries-served-mobile.600d9012.png",
+    "static/media/industries-served.png": "/public-website/static/media/industries-served.93a711df.png",
+    "static/media/section-pic.jpg": "/public-website/static/media/section-pic.7128de17.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8d9d1a1.js",
+    "static/js/2.8cedec97.chunk.js",
+    "static/css/main.14170b80.chunk.css",
+    "static/js/main.da3e0a7b.chunk.js"
+  ]
+}
