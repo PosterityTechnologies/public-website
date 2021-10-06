@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
@@ -6,9 +7,9 @@ const SiteMapItem = ({ name, url, markup }) => {
   return (
     <li>
       {url ? (
-        <a href={url} alt={name}>
+        <Link to={url} alt={name}>
           {name}
-        </a>
+        </Link>
       ) : (
         <div>{markup || name}</div>
       )}
@@ -31,19 +32,6 @@ const formatData = (data) => {
       ),
     },
   ];
-  //  d[3].items.map((item) => {
-  //   let parts = item.name.split(",");
-  //   let day = parts[0];
-  //   let hours = parts[1];
-
-  //   item.markup = (
-  //     <div className="hours">
-  //       <div>{day}:</div>
-  //       <div>{hours}</div>
-  //     </div>
-  //   );
-  //   return item;
-  // });
 
   return d;
 };
